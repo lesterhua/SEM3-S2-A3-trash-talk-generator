@@ -1,0 +1,67 @@
+<!--  ./views/index.handlebars -->
+<div class="container">
+  <h2 class="text-center">你想對誰說幹話?</h2>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <form method="POST" action="/">
+
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+              class="card-img-top" style="height: 250px" alt="engineer">
+            <div class="card-body">
+              <div class="form-check" style="text-align: center">
+                <input class="form-check-input" type="radio" name="job" id="engineer" value="engineer" {{engineer}}>
+                <label class="form-check-label" for="engineer">
+                  工程師
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+              class="card-img-top" style="height: 250px" alt="designer">
+            <div class="card-body">
+              <div class="form-check" style="text-align: center">
+                <input class="form-check-input" type="radio" name="job" id="designer" value="designer" {{designer}}>
+                <label class="form-check-label" for="designer">
+                  設計師
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+              class="card-img-top" style="height: 250px" alt="entrepreneur">
+            <div class="card-body">
+              <div class="form-check" style="text-align: center">
+                <input class="form-check-input" type="radio" name="job" id="entrepreneur" value="entrepreneur"
+                  {{entrepreneur}}>
+                <label class="form-check-label" for="entrepreneur">
+                  創業家
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-inline" style="margin-left: 12px;
+    width: 100%; margin-top: 10px;">
+          <button type="submit" class="btn btn-primary col-3 col-sm-2 mr-5">產生幹話</button>
+          <textarea class="form-control col-9 col-sm-9 " id="trashTalk" style="margin-top: 50px"
+            rows="3">{{#if trashTalk}}{{trashTalk}}{{/if}}</textarea>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
