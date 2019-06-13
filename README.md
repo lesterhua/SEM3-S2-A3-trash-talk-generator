@@ -45,7 +45,7 @@ cd restaurant_list
 
 ## 畫面 - Demo
 
-![alt text](https://github.com/lesterhua/SEM3-S2-U42-password-generator/blob/master/public/generatePassword.gif)
+![alt text](https://github.com/lesterhua/SEM3-S2-A3-trash-talk-generator/blob/master/public/trash_talk.gif)
 
 ## 作者 - Authors
 
